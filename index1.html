@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        .box:first-child{
+            background-color: aquamarine;
+            border: 3px solid black;
+            
+        } 
+          .boxes *{
+            border: 2px solid black;
+            padding: 2px;
+          }
+         
+          [class="box full"]{
+            background-color: blue;
+          }
+          
+          .boxes::before{
+            content:"Ahmad is Great";
+          }
+          .boxes::after{
+            margin: 3px;
+            content:"Ahmad is Great again.";
+
+          }
+          ::selection{
+            background-color: black;
+            color: aquamarine;
+          }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box">This is 1st Box</div>
+    <div class="box full">This is 2nd Box</div>
+    <div class="box">This is 3rd Box</div>
+    </div>
+</body>
+</html>
