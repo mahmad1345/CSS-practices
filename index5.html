@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }  
+        /* All these are Flex property practice. */
+        .boxes{
+            border: 2px solid red;
+            width: 544px ;
+            height: 418px;
+            display: flex;
+            background-color: aquamarine;
+            /* justify-content: center; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 4px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 70px;
+            height: 40px;
+            margin: 5px;
+            padding: 5px;
+        }
+        /* selecting the childs of Parents elements to give some styles */
+        .box:nth-child(4){
+            background-color: rgb(145, 114, 76);
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="boxes">
+    <div class="box box1">I am box no 1</div>
+    <div class="box box2">I am box no 2</div>
+    <div class="box box3">I am box no 3</div>
+    <div class="box box4">I am box no 4</div>
+    <div class="box box5">I am box no 5</div>
+    
+   </div>
+   
+   /*These all are the Flex properties on Parent element, item element properties are rere to use like one is to Order the item giving it an order and so on.*/
+    
+</body>
+</html>
