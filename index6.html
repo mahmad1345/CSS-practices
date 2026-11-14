@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform property</title>
+    <style>
+        .container{
+            width: 258px;
+            height: 220px;
+            border: 2px solid rgb(232, 20, 20);
+
+        }
+        .box1{
+            width: 90px;
+            height: 85px;
+            border: 2px solid black;
+            align-content: center;
+            padding: 4px;
+            /*Apni jaga se agay chala jye ga, ye use ho gi in nav bar giving spaces.
+            It can also work for negative.*/
+            transform: translate(40px);
+            transform: translatex(12px);
+
+            /*3D ma translate krde gi iska syntax ye rha*/
+             /* Syntax = transform: translate3d(x, y, z);
+             X= Horizontal
+             y= Vertical
+             z= Depth, forward or back */
+
+            transform: rotate3d(1, 2, 3, 10deg);
+            /* transform: translate3d(4, 5, 10, 30deg); */
+
+            /*It will rotate itself to given degree*/
+
+            transform: rotate(45deg); */
+             transform: rotateY(80deg);
+
+            /*It will become bigger than its default size to specified times*/
+
+            /* transform: scale(2); */
+            /* transform: scaleX(1.6); */ 
+            /* /* transform: scaleY(1.4); */
+            /*Transform skew will skew(chipka dena) the given item to given degree.*/
+ 
+            transform: skewX(35deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            I am a box.
+        </div>
+    </div>
+</body>
+</html>
